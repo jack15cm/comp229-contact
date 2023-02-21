@@ -1,0 +1,112 @@
+<%-include ('partials/header.ejs');%>
+<%-include ('partials/main_nav.ejs');%>
+    
+<div class="container">
+  
+  <% if (typeof (sys_msg) == 'string') { %>
+  <script>
+    M.toast({html: '<%=sys_msg%>'});
+    </script>
+  <% } %>
+  
+    <div class="jumbo">
+    Welcome!
+    </div>
+    
+    <h1>This site is to showcase my expertise in web app. </h1>
+      
+      
+
+    <p class="narrow-column">I developed this site from ground up. It is my first time to use node.js to write web app.
+      I used to write web app with Java/Jsp. Node.js is more joyceful to write because it is function rich 
+      and more adaptive to web application. The node.js together is a really productive tool such that I 
+      can start a dynamic web appical prototype in a few minutes which is much faster than developing using Java.
+    
+    </p>
+    
+    <p class="narrow-column">With the help of Express.js framework, I can create a production ready development framework
+      with just a few clicks and little configuration. Express.js provide a very nice MVC framework.
+      Express.js provides all the primitive function for building a responsible web app like routing, template engine.
+      </p>
+
+    <p class="narrow-column">This site is being hosted on DigitalOcean droplet. With ubuntu+nginx as the backend server config.
+      NGINX provides a efficient way of organizing different web apps altogether and a handsome service endpoint URL. 
+      </p>
+
+      <p class="narrow-column">Below are the tools or platform adopted</p>
+
+    <div class="section-separator">&nbsp;</div>
+    
+    <!-- Row #1-->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="/Assets/images/nodejs_logo.png">
+            <span class="card-title">Node.js</span>
+          </div>
+          <div class="card-content">
+            <p>Node.js is an open-source, cross-platform JavaScript runtime environment.</p>
+          </div>
+         
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="/Assets/images/expressjs_logo.png">
+            <span class="card-title">Express.js</span>
+          </div>
+          <div class="card-content">
+            <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="/Assets/images/nginx_logo.jpg">
+            <span class="card-title">NGINX</span>
+          </div>
+          <div class="card-content">
+            <p>NGINX is a free, open-source, high-performance HTTP server and reverse proxy</p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  <!-- End row 1-->
+    <!-- Row #2-->
+    <div class="row">
+      
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="/Assets/images/digital_ocean_logo.png">
+            <span class="card-title" >Digital Ocean</span>
+          </div>
+          <div class="card-content">
+            <p>DigitalOcean Holdings, Inc. is an American multinational technology company and cloud service provider.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  <!-- End row 2-->
+ 
+    
+  <div class="section-separator">&nbsp;</div>
+  <div class="section-separator">&nbsp;</div>
+  <div class="section-separator">&nbsp;</div>
+    
+    <h1 class="center-align shadow">Coding makes our lives better :)</h1>
+    <div class="section-separator">&nbsp;</div>
+    <div class="section-separator">&nbsp;</div>
+    <div class="section-separator">&nbsp;</div>
+  </div>
+
+
+<%- include('partials/bottom_nav'); -%>
+<%- include('partials/footer'); -%>
+

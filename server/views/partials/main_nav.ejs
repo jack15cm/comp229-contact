@@ -1,0 +1,24 @@
+<nav id="top-banner" >
+  <div class="nav-wrapper" >
+    <a href="/" class="brand-logo"><img height="100" src="/Assets/images/logo.png"></a>
+    
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li><a href="/home" style="color:#000;">Home</a></li>
+       <li><a href="/about" style="color:#000;">About</a></li>
+       <li><a href="/projects" style="color:#000;">Projects</a></li>
+       <li><a href="/services" style="color:#000;">Services</a></li>
+       <%if(typeof displayName =='string' && displayName){%>
+      <li><a href="/contactlist" style="color:#000;">Business Contact List</a></li>
+      <% }%>
+      <li><a href="/contact" style="color:#000;">Contact</a></li>
+      <%if(typeof displayName =='string' && displayName){%>
+        <li >Welcome, <%=displayName%></li>
+        <li ><a href="/logout" >logout</a></li>
+        <%}else{%>
+          <li ><a href="/login" >Login</a></li>
+          <%}%>
+    </ul>
+  </div>
+</nav>
+
+<div style="height:4rem">&nbsp;</div>

@@ -1,0 +1,142 @@
+<%-include ('partials/header.ejs');%>
+<%-include ('partials/main_nav.ejs');%>
+
+
+<div class="container">
+    <div class="jumbo">
+      Projects
+      </div>
+  
+  <!-- Project 1--->
+      <h1>Credit Card Redemption</h1>
+  <h2>Build a message gateway to facilitate credit card gift redemption from online bank</h2>
+  
+   <img src="/Assets/images/projects_credit_card_redemption.jpg">
+   <div class="section-separator">&nbsp;</div>
+   <div class="row">
+  <div class="col s12 m4"><span class="underline">Role</span>
+    <ul>
+      <li>System Architect</li>
+      <li>Developer</li>
+      
+      </ul> 
+  </div>
+  <div class="col s12 m4">
+    <span class="underline">Responsibilities</span>
+    <ul>
+      <li>Requirement Analysis</li>
+      <li>System Design</li>
+      <li>System Development</li>
+    </ul> 
+  </div>
+  <div class="col s12 m4">
+    <span class="underline">Technology Stack</span>
+    <ul>
+    <li>J2EE</li>
+      <li>IBM MQ</li>
+        <li>Websphere</li>
+    </ul> 
+  </div>
+  
+  <div class="section-separator">&nbsp;</div>
+  <div class="section-separator">&nbsp;</div>
+  <div class="section-separator">&nbsp;</div>
+  
+  <p class="narrow-column">The goal of the project is to enable customers to do credit card redemptions from online banking.</p>
+  <p class="narrow-column">To facilitate this, we need to allow communication between core banking system and card center systems. IBM MQ is adopted the means for channel communication.</p>
+  <p class="narrow-column">The next step is to build a message gateway to facilite request message digestion, request dispatching to target systems and bundling result response.
+    The message is in XML format which is interoperable among heterogenou systems. The XML file can transfer not only plain text message but images, pdf though encoding and decoding. 
+  </p>
+  
+  <!-- Project 2--->
+  <h1>Preflight upsell</h1>
+  <h2>Before flight departure, send promotions to target passengers for upselling opportunities</h2>
+  
+   <img src="/Assets/images/preflight_upsell.jpg">
+   <div class="section-separator">&nbsp;</div>
+   <div class="row">
+  <div class="col s12 m4"><span class="underline">Role</span>
+    <ul>
+      <li>System Architect</li>
+      <li>Developer</li>
+      
+      </ul> 
+  </div>
+  <div class="col s12 m4">
+    <span class="underline">Responsibilities</span>
+    <ul>
+      <li>Requirement Analysis</li>
+      <li>System Design</li>
+      <li>System Development</li>
+    </ul> 
+  </div>
+  <div class="col s12 m4">
+    <span class="underline">Technology Stack</span>
+    <ul>
+    <li>Java</li>
+      <li>SQL</li>
+        <li>CRM system</li>
+    </ul> 
+  </div>
+  <div class="section-separator">&nbsp;</div>
+  <div class="section-separator">&nbsp;</div>
+  <div class="section-separator">&nbsp;</div>
+  <p class="narrow-column">To increase the profit margin, airlines are seeking all possible upselling opportunity.</p>
+  <p class="narrow-column">One of the perfect timing for doing upselling, few days before the flight departure date is the golden timing.
+  The idea is to sort a list of target passengers and send the corresponding revelent promotions to the list of passengers. 
+  </p>
+  <p class="narrow-column">This is how is it actually implemented.
+  First, there will be a daily schedule job to export a list of target passengers according their flight date and what they alreay purchssed from the flight booking database.
+  The next step would be integration with the CRM system to blast promotion emails to list of passengers. 
+  </p>
+  
+  <!-- Project 3--->
+  <h1>Data Analytics on Cloud</h1>
+  <h2>Migrate traditional on-permise ETL pipeline architecture to cloud platform</h2>
+  
+   <img src="/Assets/images/projects_cloud_etl.jpg">
+   <div class="section-separator">&nbsp;</div>
+   <div class="row">
+  <div class="col s12 m4"><span class="underline">Role</span>
+    <ul>
+      <li>System Architect</li>
+      <li>System Analysis</li>
+      <li>Project Management</li>
+      
+      </ul> 
+  </div>
+  <div class="col s12 m4">
+    <span class="underline">Responsibilities</span>
+    <ul>
+      <li>Requirement Analysis</li>
+      <li>System Design</li>
+      <li>Vendor Management</li>
+    </ul> 
+  </div>
+  <div class="col s12 m4">
+    <span class="underline">Technology Stack</span>
+    <ul>
+     <li>Azure SQL Server Cloud</li>
+     <li>Azure ADF Data Factory</li>
+    </ul> 
+  </div>
+  <div class="section-separator">&nbsp;</div>
+  <div class="section-separator">&nbsp;</div>
+  <div class="section-separator">&nbsp;</div>
+  <p class="narrow-column">This is a migration project. There was a traditional ETL pipeline built on on-permise system.
+    While the data volume had been growing, the system is running out of storage and computing power. The goal of this
+  project is to migrate the whole ETL process to Azure cloud environment so as to leveage the robutness and elasticilty.
+  </p>
+  <p class="narrow-column">The scope of the project is to migrate all the ETL programs as well as databases.</p>
+  <p class="narrow-column">This was archived by Azure ADF Data Factory and Azue SQL Server  Cloud.
+  </p>
+  
+  
+  </div>
+  <!-- end container -->
+
+
+<%- include('partials/bottom_nav'); -%>
+<%- include('partials/footer'); -%> 
+
+

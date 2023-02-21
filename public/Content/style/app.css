@@ -1,0 +1,42 @@
+/* Custom CSS goes here */
+
+body,footer{
+background-color: #e6e3d2!important;
+}
+
+footer{margin-top:10rem;}
+
+.jumbo{font-family: "Lobster", sans-serif;font-size:10rem ;}
+h1{font-family: "Lobster", sans-serif;font-size:3rem ;font-weight:50;margin:3rem 0rem;}
+h2{font-size:2rem;}
+
+.narrow-column{width:70%;min-width:200px;}
+
+.debug{border: 1px solid #f00;}
+.nav-wrapper{background:#e6e3d2;color:#999;padding:1rem 10rem}
+.page-footer{background:#fff;color:#999;}
+
+
+.page-footer ul > li {
+    display: inline-block;
+	margin:3rem;
+   
+}
+
+
+nav#top-banner{
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	margin-bottom:4rem;
+	
+}
+
+.section-separator{height:3rem}
+
+.underline{text-decoration: underline;}
+
+.shadow{text-shadow: 2px 2px 5px #999;}
+
+.card-title{color:#999!important}
+
+#contact-form{width:60%!important; min-width:600px;}

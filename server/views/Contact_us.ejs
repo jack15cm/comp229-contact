@@ -1,0 +1,70 @@
+<%- include('partials/header'); -%>
+<%- include('partials/main_nav'); -%>
+  
+<div class="container">
+
+   <div class="jumbo">
+     Contact
+     </div>
+ 
+ <p class="narrow-column">In case you have any inquiries about my service, you may leave me a message in following form.
+ </p>
+ 
+ <div id="contact-form">
+ <div class="row">
+     <form class="col s12" method="post" action="/profile" >
+       <div class="row">
+         <div class="input-field col s6">
+           <input  name="firstName" id="firstName" type="text" class="validate">
+           <label for="firstName">First Name</label>
+         </div>
+         <div class="input-field col s6">
+           <input name="lastName" id="lastName" type="text" class="validate">
+           <label for="lastName">Last Name</label>
+         </div>
+       </div>
+       
+      
+       <div class="row">
+         <div class="input-field col s12">
+           <input name="email" id="email" type="email" class="validate">
+           <label for="email">Email</label>
+         </div>
+       </div>
+      
+      <div class="row">
+         <div class="input-field col s12">
+           <input name="phone"  id="phone" type="text" class="validate">
+           <label for="phone">Phone No.</label>
+         </div>
+       </div>
+     
+     
+     
+       <div class="row">
+         <div class="input-field col s12">
+           <textarea name="contact_message"  class="materialize-textarea"></textarea>
+           <label for="contact_message">Your message</label>
+         </div>
+       </div>
+     
+       <div class="row">
+       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+         
+       </button>
+     </div>
+     
+     </form>
+   </div>
+ 
+ </div><!-- End contact form-->
+  
+ 
+   </div>
+   <!-- end container -->
+
+   <%-include ('partials/bottom_nav.ejs');%>
+<%-include ('partials/footer.ejs');%>   
+
+
+
