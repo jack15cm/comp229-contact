@@ -4,7 +4,7 @@ let mongoose = require('mongoose');
 let Contact = require('../model/contacts');
 
 /*
- A function for sorting contact name
+ A compare function for sorting contact name
 */
 function compare( a, b ) {
     if ( a.contactName < b.contactName ){
